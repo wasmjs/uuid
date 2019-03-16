@@ -5,7 +5,7 @@ extern crate wasm_bindgen;
 
 mod utils;
 pub mod v3;
-mod v4;
+pub mod v4;
 
 use cfg_if::cfg_if;
 use wasm_bindgen::prelude::*;
