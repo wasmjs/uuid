@@ -1,5 +1,5 @@
 [package]
-name = "uuid"
+name = "wasmjs_uuid"
 version = "0.1.0"
 authors = ["Amaury Martiny <amaury.martiny@protonmail.com>"]
 

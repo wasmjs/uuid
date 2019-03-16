@@ -4,7 +4,7 @@ extern crate uuid;
 extern crate wasm_bindgen;
 
 mod utils;
-mod v3;
+pub mod v3;
 mod v4;
 
 use cfg_if::cfg_if;
