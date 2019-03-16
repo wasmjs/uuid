@@ -6,6 +6,7 @@ use wasm_bindgen::prelude::*;
 pub fn uuidv3(name: &str, namespace: &str) -> String {
 	// https://rustwasm.github.io/docs/book/game-of-life/debugging.html#enable-logging-for-panics
 	utils::set_panic_hook();
+
 	let decoded = utils::clean_namespace(namespace);
 
 	match Uuid::from_slice(&decoded) {
