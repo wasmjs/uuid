@@ -8,6 +8,7 @@ extern crate wasmjs_uuid;
 use wasm_bindgen_test::*;
 use wasmjs_uuid::v3::uuidv3;
 use wasmjs_uuid::v4::uuidv4;
+use wasmjs_uuid::v5::uuidv5;
 
 wasm_bindgen_test_configure!(run_in_browser);
 
@@ -27,4 +28,13 @@ fn uuidv4_should_work() {
 	// https://github.com/kelektiv/node-uuid#version-4
 	// No idea how to make a more significant test
 	assert_eq!(uuidv4().len(), 36); // 36 = 32 + 4 hyphens
+}
+
+#[wasm_bindgen_test]
+fn uuidv5_should_work() {
+	// https://github.com/kelektiv/node-uuid#version-5
+	assert_eq!(
+		uuidv5("hello world", MY_NAMESPACE),
+		"9f282611-e0fd-5650-8953-89c8e342da0b"
+	);
 }
