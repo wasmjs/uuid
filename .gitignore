@@ -1,6 +1,13 @@
+# rust files
 /target
 **/*.rs.bk
 Cargo.lock
 bin/
 pkg/
 wasm-pack.log
+
+# js files
+www/node_modules
+
+# os files
+.DS_Store
