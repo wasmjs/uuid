@@ -1,8 +1,10 @@
 extern crate cfg_if;
+extern crate hex;
 extern crate uuid;
 extern crate wasm_bindgen;
 
 mod utils;
+mod v3;
 mod v4;
 
 use cfg_if::cfg_if;
