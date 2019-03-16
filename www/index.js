@@ -1,3 +1,3 @@
-import * as wasm from '@wasmjs/uuid';
+import { uuidv4 } from '@wasmjs/uuid';
 
-wasm.greet();
+console.log('uuidv4:', uuidv4());

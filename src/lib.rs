@@ -1,7 +1,9 @@
 extern crate cfg_if;
+extern crate uuid;
 extern crate wasm_bindgen;
 
 mod utils;
+mod v4;
 
 use cfg_if::cfg_if;
 use wasm_bindgen::prelude::*;
@@ -17,7 +19,7 @@ cfg_if! {
 }
 
 #[wasm_bindgen]
-extern {
+extern "C" {
     fn alert(s: &str);
 }
 
