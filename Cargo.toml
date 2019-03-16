@@ -2,6 +2,9 @@
 name = "uuid"
 version = "0.1.0"
 authors = ["Amaury Martiny <amaury.martiny@protonmail.com>"]
+description = "Drop-in replacement of npm's `uuid`, using wasm."
+license = "Apache-2.0 OR MIT"
+repository = "https://github.com/wasmjs/uuid"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
